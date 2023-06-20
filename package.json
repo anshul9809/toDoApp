@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  },
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "To-Do-App usingnode.js and express.js",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anshul9809/toDoApp"
+  },
+  "author": "Anshul Kumar",
+  "license": "ISC"
+}
