@@ -3,6 +3,7 @@
     --black: #0f0f0f;
     --gray: gray;
 }
+/* class for section radient background */
 .gradient-custom {
     background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
       linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
@@ -18,7 +19,6 @@ body{
     padding: 0;
 }
 
-/* text-appearance */
 h1,h2,h3,h4,h5,h6{
     margin:0;
     padding: 0;
@@ -29,7 +29,7 @@ a{
 
 
 
-
+/* starting with page */
 
 .container{
     display: flex;
@@ -38,17 +38,24 @@ a{
     justify-content: center;
     align-items: center;
 }
+
+/* header styling */
 header{
     width: 100%;
     border-bottom-width: 3px;
     border-bottom-style: solid;
-    border-bottom-color: var(--black);
+    border-bottom-color: rgb(163, 127, 211);
+    filter: drop-shadow(0px 0px 30px rgba(163, 127, 211, 0.4));
     text-align: center;
+    text-shadow: 1px 1px 10px black;
     height: auto;
+    color: white;
     font-size: 1.8rem;
     /* padding: 10px; */
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
 }
 
+/*Starting with section*/
 section{
     width: 60%;
     display: flex;
@@ -59,6 +66,9 @@ section{
     border-radius: 20px;
 
 }
+
+/* input div and form */
+
 .form-div{
     margin-top: 5%;
     width: 80%;
@@ -134,7 +144,7 @@ section{
     position: relative;
     display: flex;
     width: 10em;
-    height: 3em;
+    height: 2.5em;
     border-radius: .25em;
     overflow: hidden;
 }
@@ -143,13 +153,12 @@ section{
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1em;
+    padding: 0.8em;
     background-color: #0f0f0f;
       transition: .7s all ease;
     pointer-events: none;
     color: #f0f0f0;
 }
-/* Transition */
 .select:hover::after {
     color: black;
     background-color: white;
@@ -178,11 +187,14 @@ section{
     background-color: #070004;
 }
 
+/* starting with task section */
+
 .task-div{
     margin-top: 5%;
     width: 100%;
 }
 
+/* for tabs header */
 
 .tabs {
 	position: relative;
@@ -206,13 +218,15 @@ section{
     border-right: 1px solid var(--black);
 	cursor: pointer;
 	transition: all 0.5s ease;
-	
+    font-size: 1.2rem;
 }
 
 .tab-table label:hover {
 	background: black;
     color: white;
 }
+
+/* for tab content */
 
 .tab-content{
 	position: absolute;
@@ -225,7 +239,6 @@ section{
 	transition: 
 		opacity 0.8s ease,
 		transform 0.8s ease		;
-	/* show/hide */
     opacity: 0;
     transform: scale(0.1);
     transform-origin: top left;
@@ -234,7 +247,6 @@ section{
 }
 
 .tab-content::-webkit-scrollbar{
-    /* background: #f0f0f0; */
     background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
       linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
       linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
@@ -250,7 +262,9 @@ section{
       linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
       radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
       radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
-    /* background-blend-mode: screen, color-dodge, overlay, difference, normal; */
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+    border-radius: 10px;
+    border: 1px soild black;
 }
 
 
@@ -265,8 +279,6 @@ section{
 
 [type=radio]:checked ~ label ~ .tab-content {
 	z-index: 1;
-	
-	/* show/hide */
     opacity: 1;
     transform: scale(1);
 }
@@ -275,7 +287,12 @@ section{
 
 /* styling the list of items */
 
-
+.tab-table .tab-content .empty{
+    font-size: 1.3rem;
+    color: #0f0f0f;
+    font-weight: 600;
+    text-align:center ;
+}
 .tab-table .tab-content .list{
     list-style: none;
     overflow: auto;
@@ -311,6 +328,12 @@ section{
     align-items: center;
     justify-content: center;
 }
+.tab-table .tab-content .list .list-item button{
+    outline: none;
+    border: none;
+    background:transparent;
+    cursor: pointer;
+}
 .tab-table .tab-content .list .list-item img{
     width: 25px;
     height: 25px;
@@ -321,6 +344,9 @@ section{
     filter: drop-shadow(0px 1px 5px #cbcfe2);
 }
 
+.line-through{
+    text-decoration: line-through double;
+}
 
 /* BREAKPOINTS ----- */
 @media screen and (max-width: 767px) {
