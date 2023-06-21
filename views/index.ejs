@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        
+       <header>
+            <h2>Welcome!</h2>
+       </header> 
+
+       <section clas class="icon gradient-custom">
+            <div class="form-div">
+                <form action="/add-task/" method="post" class="form">
+                    <div class="form-outline">
+                        <i class="fa fa-tasks icon" aria-hidden="true"></i>
+                        <input type="text" name="task" id="task" required>
+                        <label for="task">New Task....</label>
+                    </div>
+                    <div class="form-outline">
+                        <div class="select">
+                            <select name="work_type" id="work_type">
+                                <option value="work">Work</option>
+                                <option value="home">Home</option>
+                                <option value="personal">Personal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Add Task</button>
+                </form>
+            </div>
+
+            <div class="task-div">
+                <div class="tabs">
+                    <div class="tab-table">
+                        <input type="radio" id="tab-1" name="tab-tabs" checked>
+                        <label for="tab-1">Tabby Tab 1</label>
+                        <div class="tab-content">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="done"><input type="checkbox"></div>
+                                    <div class="task-name"><p>the task anme is kakjfhk</p></div>
+                                    <div class="task-type"><p>the task type is this</p></div>
+                                    <div class="icons">
+                                        <a href="#"><img src="/img/trash-red.svg" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            
+                    <div class="tab-table">
+                        <input type="radio" id="tab-2" name="tab-tabs">
+                        <label for="tab-2">Tabby Tab 2</label>
+                        <div class="tab-content">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="done"><input type="checkbox"></div>
+                                    <div class="task-name"><p>the task anme is kakjfhk</p></div>
+                                    <div class="task-type"><p>the task type is this</p></div>
+                                    <div class="icons">
+                                        <a href="#"><img src="img/trash-red.svg" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>    
+                        </div>
+                    </div>
+            
+                    <div class="tab-table">
+                        <input type="radio" id="tab-3" name="tab-tabs">
+                        <label for="tab-3">Tabby Tab 3</label>
+                        <div class="tab-content">
+                            <ul class="list">
+                                <li class="list-item">
+                                    <div class="done"><input type="checkbox"></div>
+                                    <div class="task-name"><p>the task anme is kakjfhk</p></div>
+                                    <div class="task-type"><p>the task type is this</p></div>
+                                    <div class="icons">
+                                        <a href="#"><img src="img/trash-red.svg" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+             
+            </div>
+       </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
